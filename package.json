@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node",
-    "build": "babel src -d crud && ncp src/views crud/views && ncp src/public crud/public"
+    "build": "babel src -d crud && ncp src/views crud/views && ncp src/public crud/public",
+    "start": "node crud/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.22.6",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-handlebars": "^7.0.7",
