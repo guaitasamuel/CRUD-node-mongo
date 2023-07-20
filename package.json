@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js --exec babel-node",
-    "build": "babel src -d crud && ncp src/views crud/views && ncp src/public crud/public",
     "start": "node crud/index.js"
   },
   "keywords": [],
